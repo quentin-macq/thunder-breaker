@@ -1,65 +1,30 @@
 <template>
-  <v-container>
-    <v-col>
-      <div>
-        <v-card color="#f4f4f4">
-          <div @click="dialog = true">
-            <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover height="180" />
+  <v-container class="home">
+    <div v-for="(item, index) in content" :key="index" class="home__container">
+      <div class="home__text">
+        <h1> {{ item.title }} </h1>
+        <div> {{ item.text }} </div>
 
-            <v-card-title class="pt-3">
-              test
-              <span>(test)</span>
-            </v-card-title>
-
-            <v-card-text>
-           test
-            </v-card-text>
-          </div>
-        </v-card>
-
-        <v-dialog v-model="dialog">
-          <v-card color="#f4f4f4">
-            <div>
-              <v-icon
-                  color="white"
-                  icon="mdi-close"
-                  right
-                  size="30"
-                  @click="dialog = false"
-              />
-            </div>
-
-            <v-card-text>
-              test
-            </v-card-text>
-
-            <v-card-actions>
-              <v-btn
-                  color="#e52c4d"
-                  target="_blank"
-                  variant="outlined"
-                  @click="dialog = false"
-              >
-                <span>test</span>
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
+        <v-btn class="home__text__button" rounded width="120"> voir + </v-btn>
       </div>
-    </v-col>
+
+      <div class="home__img-wrapper">
+        <img :src="'/public/assets/img/' + item.img" alt="circuit breaker">
+      </div>
+    </div>
   </v-container>
 </template>
 
 <script>
+import {content} from "../../data/content";
+
 export default {
   data() {
     return {
-      dialog: false
+      content: content
     }
   }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss" scoped src="./home.scss"/>

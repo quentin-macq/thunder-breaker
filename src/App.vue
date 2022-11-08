@@ -1,24 +1,18 @@
 <template>
   <v-app>
-    <v-layout>
-      <Navbar />
-      <v-main class="app">
-        <v-container>
-          &#128540;
-          <RouterView/>
-        </v-container>
-      </v-main>
-    </v-layout>
+    <v-main class="app">
+      <Header/>
+      <Home />
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import {RouterLink, RouterView} from 'vue-router';
+import Header from "./components/Header/Header.vue";
 import Home from "./pages/Home/Home.vue";
-import Navbar from "./components/Navbar/Navbar.vue";
 
 export default {
-  components: {Navbar, Home, RouterLink, RouterView}
+  components: {Home, Header}
 }
 </script>
 
