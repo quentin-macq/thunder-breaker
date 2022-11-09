@@ -33,14 +33,14 @@ export default {
   data() {
     return {
       content,
-      maxLength: 98
+      maxLength: 240
     };
   },
 
   methods: {
     shortDescription(description) {
       description = description.substr(0, this.maxLength);
-      return description.substr(0, description.lastIndexOf(' '));
+      return description.substr(0, description.lastIndexOf(' ')) + '...';
     },
 
     showMore(item) {
