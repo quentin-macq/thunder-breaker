@@ -1,26 +1,46 @@
 .header {
-  margin-bottom: 150px;
+  font-family: 'Share tech', serif;
+  margin-bottom: 50px;
+
+  @media (min-width: $lg) {
+    margin-bottom: 150px;
+  }
 
   &__block {
     text-align: center;
     margin-top: 50px;
     line-height: 55px;
     letter-spacing: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     &__title {
-      font-size: 50px;
+      object-fit: cover;
+      width: 320px;
+      height: 150px;
+      margin-bottom: 15px;
+
+      @media (min-width: $lg) {
+        width: 500px;
+        height: 190px;
+      }
     }
 
     &__subtitle {
       font-size: 22px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      margin-top: -80px;
     }
   }
 
   &__img {
     object-fit: cover;
-    object-position: center -280px;
     width: 100%;
-    height: 400px;
+    height: 200px;
+
+    @media (min-width: $lg) {
+      object-position: center -280px;
+      height: 400px;
+    }
   }
 }

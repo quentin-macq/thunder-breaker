@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-main class="app">
-      <Header/>
+      <Header />
       <Home />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Header from "./components/Header/Header.vue";
-import Home from "./pages/Home/Home.vue";
+import Header from './components/Header/Header.vue';
+import Home from './pages/Home/Home.vue';
 
 export default {
-  components: {Home, Header}
-}
+  components: { Home, Header }
+};
 </script>
 
-<style lang="scss" scoped src="./app.scss"/>
+<style lang="scss" scoped src="./app.scss" />

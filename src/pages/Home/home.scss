@@ -1,12 +1,14 @@
 .home {
   &__container {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 100px;
+    text-align: center;
 
     @media (min-width: $lg) {
       flex-direction: row;
+      align-items: center;
       margin-bottom: 150px;
 
       &:nth-child(even) {
@@ -18,12 +20,44 @@
   &__text {
     word-break: break-word;
 
+    @media (min-width: $lg) {
+      max-width: 40%;
+    }
+
+    &__subtitle {
+      font-weight: bold;
+      font-family: 'Roboto Mono', serif;
+      text-align: justify;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      @media (min-width: $lg) {
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__content {
+      font-family: 'Roboto', serif;
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      @media (min-width: $lg) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
     &__button {
       color: $white;
       background: $dark-pink;
       font-weight: bold;
       text-transform: lowercase;
-      margin-top: 10px;
+      margin-top: 15px;
     }
   }
 
@@ -32,8 +66,19 @@
       border-radius: 2px;
       object-fit: cover;
       object-position: bottom;
-      width: 400px;
-      height: 300px;
+      width: 90%;
+      height: 200px;
+      margin-top: 20px;
+
+      @media (min-width: $sm) {
+        width: 80%;
+        height: 250px;
+      }
+
+      @media (min-width: $lg) {
+        width: 400px;
+        height: 300px;
+      }
     }
   }
 }
