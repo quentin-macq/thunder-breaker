@@ -1,0 +1,16 @@
+.footer {
+  background: $night-blue;
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__icons {
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

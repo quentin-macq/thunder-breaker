@@ -5,7 +5,7 @@
       <div class="header__block__subtitle">A smart circuit breaker</div>
     </div>
 
-    <img alt="lightning" class="header__img" src="/assets/img/lightning.png" />
+    <img alt="lightning" class="header__img" src="/assets/img/banner.jpg" />
   </div>
 </template>
 
