@@ -12,6 +12,7 @@
           v-if="!item.showMore"
           class="home__text__button"
           rounded
+          size="large"
           width="120"
           @click="showMore(item)"
         >

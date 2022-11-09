@@ -2,7 +2,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 100px;
     text-align: center;
 
@@ -33,7 +33,7 @@
       margin-right: 20px;
 
       @media (min-width: $lg) {
-        font-size: 30px;
+        font-size: 32px;
         margin-bottom: 15px;
         margin-left: 0;
         margin-right: 0;
@@ -47,6 +47,7 @@
       margin-right: 20px;
 
       @media (min-width: $lg) {
+        font-size: 18px;
         margin-left: 0;
         margin-right: 0;
       }
@@ -58,6 +59,10 @@
       font-weight: bold;
       text-transform: lowercase;
       margin-top: 15px;
+
+      @media (min-width: $lg) {
+        margin-top: 30px;
+      }
     }
   }
 
@@ -76,7 +81,7 @@
       }
 
       @media (min-width: $lg) {
-        width: 400px;
+        width: 500px;
         height: 300px;
       }
     }
