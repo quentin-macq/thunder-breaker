@@ -4,7 +4,7 @@
 
 Site vitrine visant à promouvoir Thunder Breaker (système fictif), qui est un disjoncteur intelligent visant à reduire la consommation des foyers.
 
-Réalisé lors du Workshop 2022 à l'EPSI.
+Réalisé lors du Workshop de 2022 à l'EPSI.
 
 ## Project Setup
 
